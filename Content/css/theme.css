@@ -1,0 +1,513 @@
+﻿:root {
+    --nekton-blue: #036499;
+    --nekton-dark-blue: mix(black, var(--nekton-blue), 20%);
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    font-family: Montserrat,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,Liberation Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+
+@media (min-width: 992px) {
+    .store-logo img {
+        height: auto;
+        max-height: 100px !important;
+        width: auto;
+        margin-top: -21px;
+    }
+}
+
+.categoryGrid .picture-card .title,
+.categoryGrid .card h1,
+.categoryGrid .card h2,
+.categoryGrid .card h3,
+.categoryGrid .card h4,
+.categoryGrid .card h5,
+.categoryGrid .card h6 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.generalTitle {
+    text-transform: uppercase;
+}
+
+.btn-info {
+    color: #fff;
+    /*background-color: #17a2b8;*/
+    background-color: var(--nekton-blue);
+    border-color: var(--nekton-blue);
+}
+
+    .btn-info:hover {
+        color: #fff;
+        /*background-color: #138496;*/
+        background-color: var(--nekton-dark-blue);
+        /*border-color: #117a8b;*/
+        border-color: var(--nekton-dark-blue);
+    }
+
+    .btn-info:focus, .btn-info.focus {
+        color: #fff;
+        background-color: #138496;
+        border-color: #117a8b;
+        box-shadow: 0 0 0 0.2rem rgba(58, 176, 195, 0.5);
+    }
+
+    .btn-info.disabled, .btn-info:disabled {
+        color: #fff;
+        background-color: var(--nekton-blue);
+        border-color: var(--nekton-blue);
+    }
+
+    .btn-info:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active,
+    .show > .btn-info.dropdown-toggle {
+        color: #fff;
+        background-color: #117a8b;
+        border-color: #10707f;
+    }
+
+        .btn-info:not(:disabled):not(.disabled):active:focus, .btn-info:not(:disabled):not(.disabled).active:focus,
+        .show > .btn-info.dropdown-toggle:focus {
+            box-shadow: 0 0 0 0.2rem rgba(58, 176, 195, 0.5);
+        }
+
+.btn-outline-info {
+    color: var(--nekton-blue);
+    border-color: var(--nekton-blue);
+}
+
+    .btn-outline-info:hover {
+        color: #fff;
+        background-color: var(--nekton-blue);
+        border-color: var(--nekton-blue);
+    }
+
+    .btn-outline-info:focus, .btn-outline-info.focus {
+        box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
+    }
+
+    .btn-outline-info.disabled, .btn-outline-info:disabled {
+        color: var(--nekton-blue);
+        background-color: transparent;
+    }
+
+    .btn-outline-info:not(:disabled):not(.disabled):active, .btn-outline-info:not(:disabled):not(.disabled).active,
+    .show > .btn-outline-info.dropdown-toggle {
+        color: #fff;
+        background-color: var(--nekton-blue);
+        border-color: var(--nekton-blue);
+    }
+
+        .btn-outline-info:not(:disabled):not(.disabled):active:focus, .btn-outline-info:not(:disabled):not(.disabled).active:focus,
+        .show > .btn-outline-info.dropdown-toggle:focus {
+            box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
+        }
+
+.table-info,
+.table-info > th,
+.table-info > td {
+    background-color: #bee5eb;
+}
+
+    .table-info th,
+    .table-info td,
+    .table-info thead th,
+    .table-info tbody + tbody {
+        border-color: #86cfda;
+    }
+
+.table-hover .table-info:hover {
+    background-color: #abdde5;
+}
+
+    .table-hover .table-info:hover > td,
+    .table-hover .table-info:hover > th {
+        background-color: #abdde5;
+    }
+
+.badge-info {
+    color: #fff;
+    background-color: var(--nekton-blue);
+}
+
+a.badge-info:hover, a.badge-info:focus {
+    color: #fff;
+    background-color: #117a8b;
+}
+
+a.badge-info:focus, a.badge-info.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
+}
+
+.alert-info {
+    color: #0c5460;
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+}
+
+    .alert-info hr {
+        border-top-color: #abdde5;
+    }
+
+    .alert-info .alert-link {
+        color: #062c33;
+    }
+
+.list-group-item-info {
+    color: #0c5460;
+    background-color: #bee5eb;
+}
+
+    .list-group-item-info.list-group-item-action:hover, .list-group-item-info.list-group-item-action:focus {
+        color: #0c5460;
+        background-color: #abdde5;
+    }
+
+    .list-group-item-info.list-group-item-action.active {
+        color: #fff;
+        background-color: #0c5460;
+        border-color: #0c5460;
+    }
+
+.bg-info {
+    background-color: var(--nekton-blue) !important;
+}
+
+a.bg-info:hover, a.bg-info:focus,
+button.bg-info:hover,
+button.bg-info:focus {
+    background-color: #117a8b !important;
+}
+
+.border-info {
+    border-color: var(--nekton-blue) !important;
+}
+
+.text-info {
+    color: var(--nekton-blue) !important;
+}
+
+a.text-info:hover, a.text-info:focus {
+    color: #0f6674 !important;
+}
+
+.up-btn {
+    background-color: var(--nekton-blue) !important;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.show-more-text-container {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+    .show-more-text-container:not(.show) {
+        display: none;
+    }
+
+    .show-more-text {
+        cursor: pointer;
+    }
+
+.collapsible-text-block {
+    /*position: relative;*/
+}
+
+.collapsible-text-block-inner {
+    position: relative;
+}
+
+    .collapsible-text-block-inner.collapse {
+        /*max-height: 300px;*/
+        /*max-height: attr(data-collapse-height px);*/
+        overflow-y: hidden;
+    }
+
+    .collapsible-text-block-inner.collapse:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: linear-gradient(transparent 100px, white);
+    }
+
+    /* důležité - override bootstrapu */
+    .collapsible-text-block-inner.collapse:not(.show) {
+        display: block;
+    }
+
+        .collapsible-text-block-inner.collapse.mh-50 {
+            max-height: 50px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-60 {
+            max-height: 60px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-70 {
+            max-height: 70px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-80 {
+            max-height: 80px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-90 {
+            max-height: 90px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-100 {
+            max-height: 100px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-110 {
+            max-height: 110px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-120 {
+            max-height: 120px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-130 {
+            max-height: 130px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-140 {
+            max-height: 140px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-150 {
+            max-height: 150px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-160 {
+            max-height: 160px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-170 {
+            max-height: 170px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-180 {
+            max-height: 180px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-190 {
+            max-height: 190px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-200 {
+            max-height: 200px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-210 {
+            max-height: 210px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-220 {
+            max-height: 220px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-230 {
+            max-height: 230px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-240 {
+            max-height: 240px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-250 {
+            max-height: 250px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-260 {
+            max-height: 260px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-270 {
+            max-height: 270px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-280 {
+            max-height: 280px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-290 {
+            max-height: 290px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-300 {
+            max-height: 300px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-310 {
+            max-height: 310px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-320 {
+            max-height: 320px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-330 {
+            max-height: 330px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-340 {
+            max-height: 340px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-350 {
+            max-height: 350px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-360 {
+            max-height: 360px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-370 {
+            max-height: 370px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-380 {
+            max-height: 380px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-390 {
+            max-height: 390px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-400 {
+            max-height: 400px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-410 {
+            max-height: 410px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-420 {
+            max-height: 420px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-430 {
+            max-height: 430px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-440 {
+            max-height: 440px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-450 {
+            max-height: 450px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-460 {
+            max-height: 460px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-470 {
+            max-height: 470px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-480 {
+            max-height: 480px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-490 {
+            max-height: 490px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-500 {
+            max-height: 500px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-510 {
+            max-height: 510px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-520 {
+            max-height: 520px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-530 {
+            max-height: 530px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-540 {
+            max-height: 540px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-550 {
+            max-height: 550px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-560 {
+            max-height: 560px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-570 {
+            max-height: 570px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-580 {
+            max-height: 580px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-590 {
+            max-height: 590px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-600 {
+            max-height: 600px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-610 {
+            max-height: 610px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-620 {
+            max-height: 620px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-630 {
+            max-height: 630px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-640 {
+            max-height: 640px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-650 {
+            max-height: 650px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-660 {
+            max-height: 660px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-670 {
+            max-height: 670px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-680 {
+            max-height: 680px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-690 {
+            max-height: 690px;
+        }
+
+        .collapsible-text-block-inner.collapse.mh-700 {
+            max-height: 700px;
+        }
