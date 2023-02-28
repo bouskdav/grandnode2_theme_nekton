@@ -21,6 +21,15 @@ h6, .h6 {
     }
 }
 
+.home-page .categoryGrid {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.product-label .badge {
+    background-color: #0B2B79 !important;
+}
+
 .categoryGrid .picture-card .title,
 .categoryGrid .card h1,
 .categoryGrid .card h2,
