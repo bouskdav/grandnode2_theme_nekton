@@ -1,6 +1,6 @@
 ﻿:root {
     --nekton-blue: #036499;
-    --nekton-dark-blue: mix(black, var(--nekton-blue), 20%);
+    --nekton-dark-blue: #02507A;
 }
 
 h1, .h1,
@@ -10,6 +10,14 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
     font-family: Montserrat,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,Liberation Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+
+a:not(.btn) {
+    color: var(--nekton-dark-blue) !important;
+}
+
+a:not(.btn):hover {
+    color: var(--nekton-blue) !important;
 }
 
 @media (min-width: 992px) {
@@ -62,8 +70,8 @@ h6, .h6 {
 
     .btn-info:focus, .btn-info.focus {
         color: #fff;
-        background-color: #138496;
-        border-color: #117a8b;
+        background-color: var(--nekton-dark-blue);
+        border-color: var(--nekton-dark-blue);
         box-shadow: 0 0 0 0.2rem rgba(58, 176, 195, 0.5);
     }
 
@@ -76,8 +84,8 @@ h6, .h6 {
     .btn-info:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active,
     .show > .btn-info.dropdown-toggle {
         color: #fff;
-        background-color: #117a8b;
-        border-color: #10707f;
+        background-color: var(--nekton-dark-blue);
+        border-color: var(--nekton-dark-blue);
     }
 
         .btn-info:not(:disabled):not(.disabled):active:focus, .btn-info:not(:disabled):not(.disabled).active:focus,
@@ -520,3 +528,115 @@ a.text-info:hover, a.text-info:focus {
         .collapsible-text-block-inner.collapse.mh-700 {
             max-height: 700px;
         }
+
+/* header */
+
+.qty-indicator {
+    background: var(--nekton-blue) !important;
+}
+
+/* cart */
+
+.shopping-cart-page .totals-inner {
+    border: 2px solid var(--nekton-blue);
+}
+
+.opc-header .card-header .btn-info.not-collapsed {
+    color: var(--nekton-blue);
+}
+
+    [dark-theme="true"] .opc-header .card-header .btn-info.not-collapsed::before,
+    [dark-theme="true"] .opc-header .card-header .btn-info.not-collapsed::after,
+    .opc-header .card-header .btn-info.not-collapsed::before,
+    .opc-header .card-header .btn-info.not-collapsed::after {
+        background: var(--nekton-blue);
+    }
+
+.opc-totals, .checkout-page .col-more .order-summary-content .cart-footer {
+    border: 2px solid var(--nekton-blue);
+}
+
+    .opc-totals .qty-opc {
+        background: var(--nekton-blue);
+    }
+
+.shopping-cart .prod-total {
+    color: var(--nekton-blue);
+}
+
+/* catalog */
+
+.pagination .page-item:not(.currentpage):hover .page-link {
+    background-color: var(--nekton-blue);
+    border-color: var(--nekton-blue);
+}
+
+[dark-theme="true"] .block-recently-viewed-products .card .card-body h5 a:hover, [dark-theme="true"] .generalLeftSide li.active.last > a, [dark-theme="true"] .generalLeftSide .block-category-navigation li.active .sublist > li.last > a {
+    color: var(--nekton-blue);
+}
+
+/* common */
+
+.quick-view-overview .actual-price {
+    color: var(--nekton-blue);
+}
+
+#search-box .input-group .search-box-button {
+    color: var(--nekton-blue);
+}
+
+#search-box .modal-body .search-box-text:focus {
+    border-color: var(--nekton-blue);
+}
+
+.contrast-switch .custom-control-label::before {
+    border-color: var(--nekton-blue);
+}
+
+.contrast-switch .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: var(--nekton-blue);
+    border-color: var(--nekton-blue);
+}
+
+[dark-theme="true"] .text-info {
+    color: var(--nekton-blue) !important;
+}
+
+[dark-theme="true"] a {
+    color: var(--nekton-blue);
+}
+
+.up-btn {
+    background: var(--nekton-blue);
+}
+
+.modal-close:hover, .modal-close:focus, .modal-close:not(:disabled):not(.disabled):active {
+    color: var(--nekton-blue);
+}
+
+.advanced-search-results .price {
+    color: var(--nekton-blue);
+}
+
+/* customer */
+
+[dark-theme="true"] .block-account-navigation ul li a.active, [dark-theme="true"] .block-account-navigation ul li a:hover {
+    border-color: var(--nekton-blue);
+}
+
+.block-account-navigation ul li a.active, .block-account-navigation ul li a:hover {
+    color: var(--nekton-blue);
+    border-color: var(--nekton-blue);
+}
+
+/* header */
+
+[dark-theme="true"] .qty-indicator {
+    background: var(--nekton-blue);
+}
+
+/* product */
+
+[dark-theme="true"] .product-details-page .overview .actual-price {
+    color: var(--nekton-blue);
+}
