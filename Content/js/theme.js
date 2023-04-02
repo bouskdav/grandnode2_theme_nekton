@@ -43,4 +43,19 @@
 			}
 		});
 	}
+
+	// zvýraznit adresy
+	var context = document.querySelector('.select-shipping-address');
+	var instance = new Mark(context);
+	instance.mark('dodací adresu', {
+		element: 'strong',
+		separateWordSearch: false
+	});
+
+	var context2 = document.querySelector('.select-billing-address');
+	var instance2 = new Mark(context2);
+	instance2.mark('fakturační adresu', {
+		element: 'strong',
+		separateWordSearch: false
+	});
 });
